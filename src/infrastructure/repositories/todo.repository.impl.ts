@@ -23,6 +23,6 @@ export class TodoRepositoryImpl implements TodoRepository {
     }
 
     deleteById(id: number): Promise<TodoEntity> {
-        return this.deleteById(id);
+        return this.dataSource.deleteById(id);
     }
 }
